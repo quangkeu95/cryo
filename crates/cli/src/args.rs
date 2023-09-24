@@ -70,6 +70,10 @@ pub struct Args {
     #[arg(short, long, help_heading = "Source Options")]
     pub rpc: Option<String>,
 
+    /// Multiple RPC urls
+    #[arg(long, env = "MULTI_RPC_URL", help_heading = "Source Options", value_delimiter = ',', num_args(0..))]
+    pub multi_rpc: Option<Vec<String>>,
+
     /// Network name [default: name of eth_getChainId]
     #[arg(long, help_heading = "Source Options")]
     pub network_name: Option<String>,

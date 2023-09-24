@@ -22,6 +22,7 @@ clap_cryo = { version = "4.3.21-cryo", features = [
     "derive",
     "color",
     "unstable-styles",
+    "env"
 ] }
 colored = "2.0.0"
 color-print = "0.3.4"
